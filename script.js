@@ -17,7 +17,7 @@ const players = {
 const games = [
 
 /* ================= WEEK 1 ================= */
-{ week: 1, p1: "Mateo", p2: "Alec", s1: 10, s2: 4 },
+{ week: 1, p1: "Mateo", p2: "Alec", s1: 0, s2: 0 },
 { week: 1, p1: "Daniel", p2: "Tyler", s1: 0, s2: 0 },
 { week: 1, p1: "Carlos", p2: "X", s1: 0, s2: 0 },
 { week: 1, p1: "Carlos", p2: "Drunoh", s1: 0, s2: 0 },
