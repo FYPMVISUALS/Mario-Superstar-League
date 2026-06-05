@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mario Superstar League</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🏆 The Metro BBL</h1>
+    <p>Mario Superstar League</p>
+</header>
+
+<!-- STANDINGS -->
+<section class="standings">
+    <h2>🏆 Standings</h2>
+
+    <div class="standings-grid">
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">National League</th>
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>%</th>
+                </tr>
+            </thead>
+            <tbody id="nl-body"></tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">American League</th>
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>%</th>
+                </tr>
+            </thead>
+            <tbody id="al-body"></tbody>
+        </table>
+
+    </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule">
+<h2>📅 Schedule</h2>
+
+<!-- WEEK 1 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w1')">Week 1</div>
+    <div id="w1" class="week-content">
+
+        <div class="match"><span>Mateo @ Alec</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Daniel @ Tyler</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Carlos @ X</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Carlos @ Drunoh</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Drunoh @ Donald</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Donald @ X</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Tyler @ Mateo</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Alec @ Daniel</span><div class="score-display">0 - 0</div></div>
+
+    </div>
+</div>
+
+<!-- WEEK 2 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w2')">Week 2</div>
+    <div id="w2" class="week-content">
+
+        <div class="match"><span>Mateo vs Donald</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Mateo @ Daniel</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Alec vs Drunoh</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Tyler @ Alec</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Carlos vs Tyler</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Donald @ Carlos</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>X @ Drunoh</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>X vs Daniel</span><div class="score-display">0 - 0</div></div>
+
+    </div>
+</div>
+
+<!-- WEEK 3 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w3')">Week 3</div>
+    <div id="w3" class="week-content">
+
+        <div class="match"><span>Alec @ Mateo</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Mateo vs X</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Alec vs Carlos</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Tyler @ Daniel</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Tyler vs Drunoh</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Drunoh vs Carlos</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>X @ Donald</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Donald vs Daniel</span><div class="score-display">0 - 0</div></div>
+
+    </div>
+</div>
+
+<!-- WEEK 4 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w4')">Week 4</div>
+    <div id="w4" class="week-content">
+
+        <div class="match"><span>Mateo vs Carlos</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Mateo vs Drunoh</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Alec vs X</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Alec vs Donald</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Tyler vs Donald</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Tyler vs X</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Daniel vs Carlos</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Daniel vs Drunoh</span><div class="score-display">0 - 0</div></div>
+
+    </div>
+</div>
+
+<!-- WEEK 5 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w5')">Week 5</div>
+    <div id="w5" class="week-content">
+
+        <div class="match"><span>Mateo @ Tyler</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Daniel @ Mateo</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Alec @ Tyler</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Carlos @ Donald</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>X @ Carlos</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Donald @ Drunoh</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Drunoh @ X</span><div class="score-display">0 - 0</div></div>
+        <div class="match"><span>Alec vs Daniel</span><div class="score-display">0 - 0</div></div>
+
+    </div>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+<!-- ROSTER IMAGE SECTION -->
+<section class="roster-section">
+    <h2>👥 Team Rosters</h2>
+
+    <div class="roster-image-container">
+        <img src="Images/Roster.png" alt="Team Rosters">
+    </div>
+</section>
+</body>
+</html>
