@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    background: #cc0000;
+}
+
+/* STANDINGS */
+.standings {
+    padding: 10px;
+}
+
+.standings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.standings table {
+    width: 100%;
+    background: #151515;
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+.standings th {
+    background: #cc0000;
+    padding: 8px;
+}
+
+.standings td {
+    text-align: center;
+    padding: 6px;
+    border-bottom: 1px solid #222;
+}
+
+.winner-row {
+    background: rgba(0,255,100,0.15);
+    color: #00ff88;
+    font-weight: bold;
+}
+
+/* SCHEDULE */
+.schedule {
+    padding-bottom: 30px;
+}
+
+.week {
+    width: 75%;
+    max-width: 18000px;
+    margin: 10px auto;
+}
+
+.week-header {
+    background: #cc0000;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.week-header:hover {
+    background: gold;
+    color: black;
+}
+
+.week-content {
+    display: none;
+    padding-top: 10px;
+}
+
+.week-content.active {
+    display: block;
+}
+
+/* MATCH ROW */
+.match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 8px 10px;
+    margin: 6px 0;
+    border-radius: 6px;
+}
+
+/* SCORE BOX */
+.score-display {
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+    color: gold;
+    background: #111;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+h2 {
+    text-align: center;
+} /* ================= ROSTER IMAGE SECTION ================= */
+
+.roster-section {
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.roster-section h2 {
+    margin-bottom: 15px;
+}
+
+/* centers image and makes it clean */
+.roster-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image styling */
+.roster-image-container img {
+    max-width: 95%;
+    width: 900px;   /* keeps it large but not overflowing */
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #cc0000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
