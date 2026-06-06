@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mario Superstar League</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="Images/metrokibz.png" class="header-logo left">
+    <img src="Images/metrokibzback.png" class="header-logo right">
+
+    <div class="header-side-text left-text">metrokibz</div>
+    <div class="header-side-text right-text">metrokibz</div>
+
+    <h1>🏆 The Metro BBL 🏆</h1>
+    <div class="header-bottom-text left-bottom-text">Live on Twitch</div>
+    <div class="header-bottom-text right-bottom-text">Content on Youtube</div>
+    <p>Mario Superstar Baseball League</p>
+
+</header>
+
+<!-- STANDINGS -->
+<section class="standings">
+    <h2>🏆 Standings</h2>
+
+    <div class="standings-grid">
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">National League</th>
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>%</th>
+                </tr>
+            </thead>
+            <tbody id="nl-body"></tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">American League</th>
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>%</th>
+                </tr>
+            </thead>
+            <tbody id="al-body"></tbody>
+        </table>
+
+    </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule">
+<h2>📅 Schedule</h2>
+
+<!-- WEEK 1 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w1')">Week 1</div>
+
+    <div id="w1" class="week-content">
+
+        <div class="match">
+            <div class="match-info">
+                <span>Mateo @ Alec</span>
+                <img src="Images/dk jungle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Daniel @ Tyler</span>
+                <img src="Images/Bowser Castle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Carlos @ Xavier</span>
+                <img src="Images/Wario Palace.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Carlos @ Drunoh</span>
+                <img src="Images/dk jungle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Drunoh @ Donald</span>
+                <img src="Images/Bowser Castle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Donald @ Xavier</span>
+                <img src="Images/Wario Palace.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Tyler @ Mateo</span>
+                <img src="Images/Peach Garden.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Alec @ Daniel</span>
+                <img src="Images/Wario Palace.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- WEEK 2 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w2')">Week 2</div>
+
+    <div id="w2" class="week-content">
+
+        <div class="match">
+            <div class="match-info">
+                <span>Mateo vs Donald</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Mateo @ Daniel</span>
+                <img src="Images/Wario Palace.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Alec vs Drunoh</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Tyler @ Alec</span>
+                <img src="Images/dk jungle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Carlos vs Tyler</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Donald @ Carlos</span>
+                <img src="Images/Yoshi Park.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Xavier @ Drunoh</span>
+                <img src="Images/dk jungle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Xavier vs Daniel</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- WEEK 3 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w3')">Week 3</div>
+
+    <div id="w3" class="week-content">
+
+        <div class="match">
+            <div class="match-info">
+                <span>Alec @ Mateo</span>
+                <img src="Images/Peach Garden.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Mateo vs Xavier</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Alec vs Carlos</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Tyler @ Daniel</span>
+                <img src="Images/Wario Palace.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Tyler vs Drunoh</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Drunoh vs Carlos</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Xavier @ Donald</span>
+                <img src="Images/Bowser Castle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Donald vs Daniel</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- WEEK 4 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w4')">Week 4</div>
+
+    <div id="w4" class="week-content">
+
+        <div class="match">
+            <div class="match-info">
+                <span>Mateo vs Carlos</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Mateo vs Drunoh</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Alec vs Xavier</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Alec vs Donald</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Tyler vs Donald</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Tyler vs Xavier</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Daniel vs Carlos</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Daniel vs Drunoh</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- WEEK 5 -->
+<div class="week">
+    <div class="week-header" onclick="toggleWeek('w5')">Week 5</div>
+
+    <div id="w5" class="week-content">
+
+        <div class="match">
+            <div class="match-info">
+                <span>Mateo @ Tyler</span>
+                <img src="Images/Bowser Castle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Daniel @ Mateo</span>
+                <img src="Images/Peach Garden.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Alec @ Tyler</span>
+                <img src="Images/Bowser Castle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Carlos @ Donald</span>
+                <img src="Images/Bowser Castle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Xavier @ Carlos</span>
+                <img src="Images/Yoshi Park.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Donald @ Drunoh</span>
+                <img src="Images/dk jungle.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Drunoh @ Xavier</span>
+                <img src="Images/Wario Palace.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+        <div class="match">
+            <div class="match-info">
+                <span>Alec vs Daniel</span>
+                <img src="Images/Mario Stadium.png" class="field-banner">
+            </div>
+            <div class="score-display">0 - 0</div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+<!-- ROSTER IMAGE SECTION -->
+<section class="roster-section">
+    <h2>👥 Team Rosters</h2>
+
+    <div class="roster-image-container">
+        <img src="Images/Roster.png" alt="Team Rosters">
+    </div>
+</section>
+
+</body>
+</html>
