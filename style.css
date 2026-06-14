@@ -201,6 +201,14 @@ header p {
     font-weight: bold;
 }
 
+.header-bottom-text a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-bottom-text a:hover {
+    text-decoration: underline;
+}
 /* ================= SCHEDULE ================= */
 
 .schedule {
