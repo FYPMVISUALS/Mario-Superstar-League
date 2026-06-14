@@ -87,19 +87,16 @@ header p {
 
 /* LOWER HEADER SIDE TEXT */
 
-.header-bottom-text {
-    position: absolute;
-    top: 86px;
+.header-bottom-text a {
+    color: #d9d9d9;              /* slightly dimmer than pure white */
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s;
+}
 
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-    color: white;
-
-    text-shadow: 0 0 8px rgba(0,0,0,0.5);
-
-    z-index: 6;
+.header-bottom-text a:hover {
+    color: #59A86A;              /* your green accent */
+    border-bottom: 1px solid #59A86A;
 }
 
 /* LEFT SIDE */
