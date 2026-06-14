@@ -87,16 +87,19 @@ header p {
 
 /* LOWER HEADER SIDE TEXT */
 
-.header-bottom-text a {
-    color: #d9d9d9;              /* slightly dimmer than pure white */
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: 0.2s;
-}
+.header-bottom-text {
+    position: absolute;
+    top: 86px;
 
-.header-bottom-text a:hover {
-    color: #59A86A;              /* your green accent */
-    border-bottom: 1px solid #59A86A;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    color: white;
+
+    text-shadow: 0 0 8px rgba(0,0,0,0.5);
+
+    z-index: 6;
 }
 
 /* LEFT SIDE */
@@ -110,7 +113,14 @@ header p {
 .right-bottom-text {
     right: 120px;
 }
+.header-bottom-text a {
+    color: white;
+    text-decoration: none;
+}
 
+.header-bottom-text a:hover {
+    text-decoration: underline;
+}
 /* ================= STANDINGS ================= */
 
 .standings {
@@ -198,16 +208,6 @@ header p {
     font-weight: bold;
 }
 
-.header-bottom-text a {
-    color: white;
-    text-decoration: none;
-    transition: 0.2s;
-}
-
-.header-bottom-text a:hover {
-    color: #59A86A;
-    text-decoration: underline;
-}
 /* ================= SCHEDULE ================= */
 
 .schedule {
