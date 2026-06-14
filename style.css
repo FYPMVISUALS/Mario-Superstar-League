@@ -204,9 +204,11 @@ header p {
 .header-bottom-text a {
     color: white;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .header-bottom-text a:hover {
+    color: #59A86A;
     text-decoration: underline;
 }
 /* ================= SCHEDULE ================= */
