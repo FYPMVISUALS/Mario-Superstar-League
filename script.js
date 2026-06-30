@@ -38,18 +38,18 @@ const games = [
 
 /* ================= WEEK 3 ================= */
 { week: 3, p1: "Alec", p2: "Mateo", s1: 2, s2: 3 },
-{ week: 3, p1: "Mateo", p2: "Xavier", s1: 0, s2: 0 },
-{ week: 3, p1: "Alec", p2: "Carlos", s1: 0, s2: 0 },
-{ week: 3, p1: "Tyler", p2: "Daniel", s1: 0, s2: 0 },
-{ week: 3, p1: "Tyler", p2: "Drunoh", s1: 0, s2: 0 },
-{ week: 3, p1: "Drunoh", p2: "Carlos", s1: 0, s2: 0 },
-{ week: 3, p1: "Xavier", p2: "Donald", s1: 0, s2: 0 },
+{ week: 3, p1: "Mateo", p2: "Xavier", s1: 2, s2: 4 },
+{ week: 3, p1: "Alec", p2: "Carlos", s1: 0, s2: 5 },
+{ week: 3, p1: "Tyler", p2: "Daniel", s1: 11, s2: 0 },
+{ week: 3, p1: "Tyler", p2: "Drunoh", s1: 11, s2: 0 },
+{ week: 3, p1: "Drunoh", p2: "Carlos", s1: 3, s2: 1 },
+{ week: 3, p1: "Xavier", p2: "Donald", s1: 7, s2: 8 },
 { week: 3, p1: "Donald", p2: "Daniel", s1: 0, s2: 0 },
 
 /* ================= WEEK 4 ================= */
 { week: 4, p1: "Mateo", p2: "Carlos", s1: 0, s2: 0 },
 { week: 4, p1: "Mateo", p2: "Drunoh", s1: 0, s2: 0 },
-{ week: 4, p1: "Alec", p2: "Xavier", s1: 0, s2: 0 },
+{ week: 4, p1: "Alec", p2: "Xavier", s1: 3, s2: 4 },
 { week: 4, p1: "Alec", p2: "Donald", s1: 0, s2: 0 },
 { week: 4, p1: "Tyler", p2: "Donald", s1: 0, s2: 0 },
 { week: 4, p1: "Tyler", p2: "Xavier", s1: 0, s2: 0 },
