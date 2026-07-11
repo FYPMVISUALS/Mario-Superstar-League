@@ -62,7 +62,7 @@ const games = [
 { week: 5, p1: "Alec", p2: "Tyler", s1: 0, s2: 0 },
 { week: 5, p1: "Carlos", p2: "Donald", s1: 0, s2: 0 },
 { week: 5, p1: "Xavier", p2: "Carlos", s1: 0, s2: 0 },
-{ week: 5, p1: "Donald", p2: "Drunoh", s1: 0, s2: 0 },
+{ week: 5, p1: "Donald", p2: "Drunoh", s1: 10, s2: 0 },
 { week: 5, p1: "Drunoh", p2: "Xavier", s1: 0, s2: 0 },
 { week: 5, p1: "Alec", p2: "Daniel", s1: 0, s2: 0 }
 
