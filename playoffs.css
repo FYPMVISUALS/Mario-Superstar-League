@@ -322,6 +322,71 @@ gap:25px;
 
 }
 
+/* ================= HOME BUTTONS ================= */
+
+.home-button{
+
+position:absolute;
+
+top:55px;
+
+width:130px;
+
+height:55px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#090909;
+
+border:2px solid #ff6a00;
+
+border-radius:8px;
+
+color:white;
+
+text-decoration:none;
+
+font-size:22px;
+
+letter-spacing:3px;
+
+box-shadow:
+0 0 12px rgba(255,106,0,.45);
+
+transition:.2s;
+
+}
+
+
+.home-button:hover{
+
+background:#ff6a00;
+
+color:black;
+
+box-shadow:
+0 0 25px #ff6a00;
+
+}
+
+
+.left-home{
+
+left:60px;
+
+}
+
+
+.right-home{
+
+right:60px;
+
+}
+
 /* ================= MOBILE PLAYOFFS ================= */
 
 @media (max-width:900px){
