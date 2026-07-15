@@ -386,53 +386,246 @@ h2 {
 
 /* ================= MOBILE ================= */
 
+/* ================= MOBILE ================= */
+
 @media (max-width: 900px) {
 
-    .header-logo {
-        width: 52px;
-        height: 52px;
-        top: 10px;
+    /* ---------- HEADER ---------- */
+
+    .header-logo{
+        width:42px;
+        height:42px;
+        top:10px;
     }
 
-    .header-logo.left {
-        left: 8px;
+    .header-logo.left{
+        left:8px;
     }
 
-    .header-logo.right {
-        right: 8px;
+    .header-logo.right{
+        right:8px;
     }
 
-    .standings-grid {
-        grid-template-columns: 1fr;
+    .header-side-text,
+    .header-bottom-text{
+        display:none;
     }
 
-    .week {
-        width: 94%;
+    header h1{
+        font-size:22px;
+        padding:18px 55px;
+        line-height:1.3;
     }
 
-    .match {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
+    header p{
+        font-size:13px;
+        padding:10px;
     }
 
-    .match-info {
-        flex-direction: column;
-        text-align: center;
+    /* ---------- PLAYOFF BUTTON ---------- */
+
+    .playoffs-section{
+        width:94%;
     }
 
-    .match-info span {
-        min-width: auto;
+    .playoffs-content{
+        padding:24px 14px;
     }
 
-    .field-banner {
-        width: 100%;
-        max-width: 320px;
-        height: 75px;
+    .playoffs-icon{
+        font-size:42px;
+    }
+
+    .playoffs-content h2{
+        font-size:34px;
+        letter-spacing:2px;
+    }
+
+    .playoffs-content p{
+        font-size:16px;
+        margin:12px 0 22px;
+    }
+
+    .playoffs-button{
+        padding:12px 24px;
+        font-size:14px;
+    }
+
+    /* ---------- STANDINGS ---------- */
+
+    .standings-grid{
+        grid-template-columns:1fr;
+    }
+
+    .standings table{
+        font-size:13px;
+    }
+
+    .standings table th:nth-child(2),
+    .standings table td:nth-child(2){
+        width:auto;
+        padding-left:12px;
+    }
+
+    .standings table th:first-child,
+    .standings table td:first-child{
+        width:40px;
+    }
+
+    /* ---------- SCHEDULE ---------- */
+
+    .week{
+        width:96%;
+    }
+
+    .match{
+        flex-direction:column;
+        align-items:center;
+        gap:14px;
+        padding:14px;
+    }
+
+    .match-info{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+        width:100%;
+    }
+
+    .match-info span{
+        min-width:unset;
+        width:100%;
+        text-align:center;
+        white-space:normal;
+        font-size:18px;
+    }
+
+    .field-banner{
+        width:100%;
+        max-width:340px;
+        height:auto;
     }
 
     .field-left,
-    .field-right {
-        transform: translateX(0px);
+    .field-right{
+        transform:none;
     }
+
+    .score-box{
+        margin-top:4px;
+    }
+
+    /* ---------- ROSTER ---------- */
+
+    .roster-image-container img{
+        width:100%;
+        max-width:100%;
+    }
+}
+
+/* ================= PLAYOFFS ================= */
+
+.playoffs-section{
+    width:75%;
+    max-width:1400px;
+    margin:25px auto;
+}
+
+.playoffs-link{
+    display:block;
+    text-decoration:none;
+    color:white;
+
+    border:2px solid #ff7a00;
+    border-radius:16px;
+
+    background:
+        linear-gradient(180deg,#1a1a1a,#101010);
+
+    box-shadow:
+        0 0 18px rgba(255,122,0,.25);
+
+    transition:.25s;
+}
+
+.playoffs-link:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#ff9900;
+
+    box-shadow:
+        0 0 35px rgba(255,122,0,.55);
+}
+
+.playoffs-content{
+
+    padding:38px 20px;
+
+    text-align:center;
+
+}
+
+.playoffs-icon{
+
+    font-size:58px;
+    margin-bottom:8px;
+
+}
+
+.playoffs-content h2{
+
+    margin:0;
+
+    font-size:52px;
+
+    letter-spacing:5px;
+
+    color:white;
+
+    text-shadow:
+        0 0 12px rgba(255,122,0,.8);
+
+}
+
+.playoffs-content p{
+
+    margin:18px 0 28px;
+
+    font-size:20px;
+
+    color:#cfcfcf;
+
+    letter-spacing:1px;
+
+}
+
+.playoffs-button{
+
+    display:inline-block;
+
+    padding:14px 34px;
+
+    border:2px solid #ff7a00;
+
+    border-radius:40px;
+
+    color:#ff9f1c;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    transition:.25s;
+
+}
+
+.playoffs-link:hover .playoffs-button{
+
+    background:#ff7a00;
+
+    color:white;
+
+    box-shadow:0 0 20px rgba(255,122,0,.6);
+
 }
