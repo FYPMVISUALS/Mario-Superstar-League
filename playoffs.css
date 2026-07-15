@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:
+radial-gradient(circle,#151515,#050505);
+
+font-family:'Oswald',sans-serif;
+
+color:white;
+
+}
+
+.page{
+
+padding:50px;
+
+}
+
+h1{
+
+text-align:center;
+
+font-size:90px;
+
+letter-spacing:6px;
+
+margin-bottom:80px;
+
+text-shadow:
+0 0 20px #ff6a00;
+
+}
+
+.bracket{
+
+display:grid;
+
+grid-template-columns:
+
+250px
+300px
+360px
+300px
+250px;
+
+justify-content:center;
+
+align-items:center;
+
+gap:55px;
+
+}
+
+.column{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+position:relative;
+
+}
+
+h2{
+
+font-size:22px;
+
+letter-spacing:4px;
+
+color:#ff9d4d;
+
+margin-bottom:40px;
+
+}
+
+.match{
+
+width:260px;
+
+background:#090909;
+
+border:2px solid #ff6a00;
+
+border-radius:8px;
+
+overflow:hidden;
+
+box-shadow:
+0 0 12px rgba(255,106,0,.45);
+
+position:relative;
+
+}
+
+.team{
+
+height:38px;
+
+display:flex;
+
+align-items:center;
+
+padding-left:15px;
+
+font-size:21px;
+
+}
+
+/* WIN BOX ALIGNMENT */
+
+.wins{
+
+position:absolute;
+
+right:12px;
+
+height:38px;
+
+display:flex;
+
+align-items:center;
+
+font-size:18px;
+
+letter-spacing:3px;
+
+color:#ff9d4d;
+
+}
+
+.match .wins:not(.second){
+
+top:0;
+
+}
+
+.match .wins.second{
+
+top:38px;
+
+}
+
+/* PLAYER DIVIDER */
+
+.match .team.second{
+
+border-top:2px solid #ff6a00;
+
+}
+
+.bye{
+
+height:42px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding-right:15px;
+
+margin-bottom:100px;
+
+}
+
+.bye .wins{
+
+position:static;
+
+height:auto;
+
+color:#ff6a00;
+
+font-weight:bold;
+
+}
+
+.round1 .match:not(.bye){
+
+margin-top:0;
+
+}
+
+/* ===== SEMIFINAL POSITION ADJUSTMENTS ===== */
+
+.semi{
+
+margin-top:60px;
+
+}
+
+.semi h2{
+
+position:relative;
+top:-6px;
+
+}
+
+.semi .match{
+
+position:relative;
+top:-10px;
+
+}
+
+/* ========================================= */
+
+.final{
+
+justify-content:center;
+
+}
+
+.final-match{
+
+width:320px;
+
+}
+
+.final h2{
+
+margin-bottom:45px;
+
+}
+
+.champion{
+
+margin-top:70px;
+
+height:220px;
+
+width:300px;
+
+border:3px solid #ff6a00;
+
+border-radius:15px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+box-shadow:
+0 0 25px #ff6a00;
+
+}
+
+.trophy{
+
+font-size:65px;
+
+}
+
+.champion h3{
+
+letter-spacing:5px;
+
+margin:10px;
+
+}
+
+.champ-name{
+
+border:2px solid #ff6a00;
+
+height:40px;
+
+width:80%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+/* REMOVE BRACKET CONNECTOR LINES */
+
+.column::before,
+.column::after,
+.round1::before,
+.round1::after,
+.semi::before,
+.semi::after,
+.final::before,
+.final::after{
+
+content:none !important;
+
+display:none !important;
+
+}
+
+@media(max-width:1500px){
+
+.bracket{
+
+grid-template-columns:
+220px
+250px
+300px
+250px
+220px;
+
+gap:25px;
+
+}
+
+}
+
+/* ================= MOBILE PLAYOFFS ================= */
+
+@media (max-width:900px){
+
+.page{
+    padding:20px 12px;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:35px;
+    letter-spacing:2px;
+}
+
+.bracket{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.column{
+    width:100%;
+}
+
+.match,
+.final-match{
+    width:100%;
+    max-width:340px;
+}
+
+.team{
+    font-size:18px;
+}
+
+.wins{
+    font-size:15px;
+    letter-spacing:2px;
+}
+
+.bye{
+    margin-bottom:0;
+}
+
+.semi{
+    margin-top:0;
+}
+
+.semi .match{
+    top:0;
+}
+
+.final{
+    order:5;
+}
+
+.champion{
+    width:100%;
+    max-width:340px;
+    height:auto;
+    padding:25px 15px;
+}
+
+.champ-name{
+    width:100%;
+    text-align:center;
+    padding:10px;
+    height:auto;
+}
+
+}
