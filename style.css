@@ -386,8 +386,6 @@ h2 {
 
 /* ================= MOBILE ================= */
 
-/* ================= MOBILE ================= */
-
 @media (max-width: 900px) {
 
     /* ---------- HEADER ---------- */
@@ -529,6 +527,7 @@ h2 {
     width:75%;
     max-width:1400px;
     margin:25px auto;
+    padding-top:25px;
 }
 
 .playoffs-link{
