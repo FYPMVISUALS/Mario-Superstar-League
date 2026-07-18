@@ -54,7 +54,7 @@ const games = [
 { week: 4, p1: "Tyler", p2: "Donald", s1: 6, s2: 1 },
 { week: 4, p1: "Tyler", p2: "Xavier", s1: 6, s2: 8 },
 { week: 4, p1: "Daniel", p2: "Carlos", s1: 4, s2: 13 },
-{ week: 4, p1: "Daniel", p2: "Drunoh", s1: 0, s2: 0 },
+{ week: 4, p1: "Daniel", p2: "Drunoh", s1: 0, s2: 3 },
 
 /* ================= WEEK 5 ================= */
 { week: 5, p1: "Mateo", p2: "Tyler", s1: 2, s2: 0 },
@@ -63,7 +63,7 @@ const games = [
 { week: 5, p1: "Carlos", p2: "Donald", s1: 0, s2: 1 },
 { week: 5, p1: "Xavier", p2: "Carlos", s1: 1, s2: 0 },
 { week: 5, p1: "Donald", p2: "Drunoh", s1: 10, s2: 0 },
-{ week: 5, p1: "Drunoh", p2: "Xavier", s1: 0, s2: 0 },
+{ week: 5, p1: "Drunoh", p2: "Xavier", s1: 3, s2: 5 },
 { week: 5, p1: "Alec", p2: "Daniel", s1: 16, s2: 2 }
 
 ];
